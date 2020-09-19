@@ -1,6 +1,9 @@
+def add(num1, num2):
+    return int(num1) + int(num2)
 
 def opDict(arr):
     return {
+        '+' : add(arr[0], arr[2]),
 
     }.get(arr[1],"Not a valid basic operator! Please use '+' and '-' for addition and subtraction, and '*' and ' /' for multiplication and division")
 
@@ -14,6 +17,7 @@ def operation(inString):
     return result
     
 def test():
+    assert operation("3 + 3") == 6, "Adding isn't working"
     
 def main():
     print("\nWelcome to the calcuator! Please use a space between your all numbers and operators!\nUse '^^' to exit\n")
