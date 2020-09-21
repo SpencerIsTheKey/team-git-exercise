@@ -22,7 +22,7 @@ def operation(inString):
 def test():
     assert operation("3 + 3") == 6, "Adding isn't working"
     assert operation("2 - 3") == -1, "Subtraction isnt working"
-    assert operation("10 - 3") == 7, "Subtraction isnt working"
+    assert operation("4 - 3") == 1, "Subtraction isnt working"
     
 def main():
     print("\nWelcome to the calcuator! Please use a space between your all numbers and operators!\nUse '^^' to exit\n")
