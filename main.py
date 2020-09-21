@@ -1,9 +1,12 @@
 def add(num1, num2):
     return int(num1) + int(num2)
+def sub(num1, num2):
+    return int(num1) - int(num2)
 
 def opDict(arr):
     return {
         '+' : add(arr[0], arr[2]),
+        '-' : sub(arr[0], arr[2]),
 
     }.get(arr[1],"Not a valid basic operator! Please use '+' and '-' for addition and subtraction, and '*' and ' /' for multiplication and division")
 
