@@ -2,14 +2,18 @@ def add(num1, num2):
     return int(num1) + int(num2)
 def sub(num1, num2):
     return int(num1) - int(num2)
+ multiplication
 def mul(num1, num2):
     return int(num1) * int(num2)
+ master
 
 def opDict(arr):
     return {
         '+' : add(arr[0], arr[2]),
         '-' : sub(arr[0], arr[2]),
+ multiplication
         '*' : mul(arr[0], arr[2]),
+ master
 
     }.get(arr[1],"Not a valid basic operator! Please use '+' and '-' for addition and subtraction, and '*' and ' /' for multiplication and division")
 
@@ -26,7 +30,9 @@ def test():
     assert operation("3 + 3") == 6, "Adding isn't working"
     assert operation("2 - 3") == -1, "Subtraction isnt working"
     assert operation("4 - 3") == 1, "Subtraction isnt working"
+ multiplication
     assert operation("2 * 2") == 4, "Subtraction isnt working"
+ master
 def main():
     print("\nWelcome to the calcuator! Please use a space between your all numbers and operators!\nUse '^^' to exit\n")
     while (True):
