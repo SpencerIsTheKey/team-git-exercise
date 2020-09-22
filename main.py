@@ -41,7 +41,7 @@ def main():
             print("Exiting...")
             break
         result = operation(inString)
-        if(isinstance(result, int)):
+        if(isinstance(result, int) or isinstance(result, float)):
             print("Result:          "+str(result))
         else:
             print(result)
