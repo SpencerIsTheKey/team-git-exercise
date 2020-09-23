@@ -31,7 +31,7 @@ def test():
     assert operation("2 - 3") == -1, "Subtraction isnt working"
     assert operation("4 - 3") == 1, "Subtraction isnt working"
     assert operation("2 * 2") == 4, "Subtraction isnt working"
-    assert operation("9 / 3") == 3, "Division isn't working."
+    assert operation("6 / 3") == 2, "Division isn't working."
 def main():
     print("\nWelcome to the calcuator! Please use a space between your all numbers and operators!\nUse '^^' to exit\n")
     while (True):
